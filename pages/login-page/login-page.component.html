@@ -1,0 +1,28 @@
+<main class="form-signin w-100 m-auto text-center">
+  <form>
+    <h1 class="h3 mb-3 fw-normal">
+      <a class="float-start link-secondary" routerLink="/" title="Voltar">
+        <i class="bi bi-arrow-left-circle"></i>
+      </a>
+      Acessar conta
+    </h1>
+    <div class="form-floating">
+      <input type="email" class="form-control" id="emailInput" placeholder="seu@email.com">
+      <label for="emailInput">Email</label>
+    </div>
+    <div class="form-floating">
+      <input type="password" class="form-control" id="passInput" placeholder="Senha">
+      <label for="passInput">Senha</label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary mb-3" type="submit">Acessar</button>
+  </form>
+
+  <div class="row pt-1">
+    <div class="col text-start">
+      <a class="link-primary" routerLink="/conta/recuperar">Esqueci a senha</a>
+    </div>
+    <div class="col text-end">
+      <a class="link-primary" routerLink="/conta/criar">Criar conta</a>
+    </div>
+  </div>
+</main>

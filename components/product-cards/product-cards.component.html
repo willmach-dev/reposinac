@@ -1,0 +1,19 @@
+<div class="container-sm mt-0">
+  <h1 *ngIf="title" class="mt-4">{{title}}</h1>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 my-2">
+    <div class="col" *ngFor="let product of products">
+      <div class="card h-100">
+        <img [src]="product.images[0]" class="img-fluid card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{product.title}}</h5>
+          <p class="card-text">{{product.description}}</p>
+        </div>
+        <div class="card-footer text-end">
+          <a (click)="addToCart(product)" class="btn btn-primary">Comprar</a>
+          <a [routerLink]="['produtos',product.id]" class="btn btn-primary">Detalhes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

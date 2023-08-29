@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+<div class="container-sm mt-0">
+  <h2 class="mt-4">Carrinho de compras!</h2>
+
+  <table class="table">
+    <tbody>
+
+      <tr *ngFor="let product of products">
+        <td><img [src]="product.images[0]" width="60"></td>
+        <td>
+          <div><strong>{{product.title}}</strong></div>
+          {{product.category.name}}
+        </td>
+        <!-- <td>
+          <div class="input-group">
+            <button class="btn"><i class="bi bi-dash-circle"></i></button>
+            <input class="form-control" type="tel" value="1">
+            <button class="btn"><i class="bi bi-plus-circle"></i></button>
+          </div>
+        </td> -->
+        <td>{{numberFormat(product.price)}}</td>
+        <td>
+          <button (click)="removeFromCart(product)" class="btn btn-outline-danger"><i class="bi bi-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-footer></app-footer>

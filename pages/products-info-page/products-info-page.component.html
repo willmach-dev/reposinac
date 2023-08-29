@@ -1,0 +1,71 @@
+<app-header></app-header>
+<div class="container mt-4">
+  <h2>products-info-page works!</h2>
+  <div class="row">
+    <div class="col">
+      <img src="assets/images/placeholder-images.svg" width="400" height="400">
+    </div>
+    <div class="col">
+      <div>Aliquam scelerisque risus a est fermentum, vulputate pulvinar nibh euismod. Etiam suscipit urna id erat blandit consequat. Morbi nec rutrum lorem. Quisque sed porttitor nulla. Nulla in dapibus mauris. Morbi vitae diam nulla. Duis volutpat est ac neque mollis, eu rutrum nunc imperdiet. Sed pretium luctus elit non laoreet. Praesent bibendum eu magna id lobortis. Suspendisse fermentum eu justo sed vehicula.</div>
+      <div class="row">
+        <div class="input-group mt-3">
+          <input type="tel" class="form-control" placeholder="Frete para" aria-label="Frete para">
+          <button class="input-group-text"><i class="bi bi-truck"></i></button>
+        </div>
+        <div class="mt-3">
+          <input (click)="addToCart(1)" type="button" class="form-control btn btn-success" value="Comprar">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <p>Donec ipsum neque, vestibulum et scelerisque at, hendrerit eget magna. Vivamus sit amet consequat libero, at semper urna. Nulla vel dapibus sem, et auctor lectus. Vestibulum ornare ipsum vel luctus blandit. Maecenas interdum arcu eget augue tristique, in semper velit suscipit. Donec maximus semper cursus. Nulla non tellus arcu. Nulla lobortis pretium metus, hendrerit congue nibh gravida eget. Ut metus sapien, consectetur id viverra non, pulvinar et nulla. Maecenas ut ex consectetur, volutpat massa vel, pellentesque dui. Duis urna ipsum, maximus quis consequat et, imperdiet eu sapien. Nullam faucibus, massa a vestibulum tincidunt, turpis dolor posuere augue, sed vulputate odio mauris vitae lacus.</p>
+        <p>Suspendisse mattis efficitur eros vitae lacinia. In auctor porta nibh vitae dignissim. Cras ultrices varius lectus, cursus lacinia felis. Vestibulum ultrices, orci id pretium condimentum, leo ipsum rhoncus libero, nec egestas sem mauris eget eros. In varius malesuada nunc, non venenatis turpis fringilla at. Sed tincidunt diam sapien, vitae posuere justo bibendum nec. Praesent in elit est. Phasellus maximus ante turpis, sed consequat magna placerat euismod. Integer imperdiet, nulla nec euismod imperdiet, quam ligula efficitur magna, ut aliquam orci sapien quis libero. Donec efficitur est a mattis sodales. Curabitur ullamcorper auctor scelerisque.</p>
+        <p>Mauris lobortis quam non iaculis auctor. Integer vitae libero semper, consectetur augue quis, cursus orci. In a iaculis quam. Etiam in porta sem. Nunc enim tortor, tempus id massa eget, ultricies malesuada turpis. Integer eget eros suscipit, semper quam sed, posuere nisl. Nam id eros vitae turpis dignissim mattis. Pellentesque sed lacus et arcu facilisis maximus at vitae est. Vivamus malesuada felis non lectus elementum, ac consequat purus vestibulum. Vivamus ante turpis, interdum ac tellus eu, rhoncus lobortis neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis dignissim, libero eget auctor tincidunt, purus orci aliquet ligula, id gravida leo purus eu magna. Vivamus feugiat semper ante ac dapibus. Mauris lacinia metus eu rhoncus tempor.</p>
+        <p>Nunc in felis ex. In hac habitasse platea dictumst. Vivamus id scelerisque erat. Etiam a ante non nulla feugiat faucibus. Aenean congue malesuada odio, ac mattis lectus sodales non. Donec volutpat, ipsum a volutpat varius, nulla metus ultrices turpis, vitae finibus nunc nisl id lectus. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse dignissim diam sed bibendum posuere. Donec urna velit, tincidunt sed mollis sed, tincidunt eu dolor. Donec quis nulla massa. Praesent pellentesque justo id enim scelerisque, non pulvinar est dapibus.        </p>
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
